@@ -52,12 +52,17 @@ def new_post(request):
     form = PostForm()
     return render(request, 'new_post.html', {'form': form})
 
+
 def profile(request, username):
 
-    user = request.user
     profile = get_object_or_404(User, username=username)
-    user_is_author = (user != profile)
-    following = Follow.objects.filter(user=user, author=profile).exists()
+    user_is_author = False
+    following = False
+
+    if  request.user.is_authenticated:
+        user = request.user
+        user_is_author = (user != profile)
+        following = Follow.objects.filter(user=user, author=profile).exists()
 
     posts = Post.objects.filter(author=profile).order_by('-pub_date')
     posts = Paginator(posts, 10)
