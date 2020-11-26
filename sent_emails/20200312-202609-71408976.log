@@ -1,0 +1,410 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Subject: [Django] ERROR (EXTERNAL IP): Internal Server Error: /404/
+From: root@localhost
+To: a
+Date: Thu, 12 Mar 2020 17:26:09 -0000
+Message-ID: <158403396976.15604.2019878693855078618@DESKTOP-CFUIM7H>
+
+Internal Server Error: /404/
+
+TypeError at /404/
+page_not_found() missing 1 required positional argument: 'exception'
+
+Request Method: GET
+Request URL: http://127.0.0.1:8000/404/
+Django Version: 2.2
+Python Executable: C:\Dev\hw05\venv\Scripts\python.exe
+Python Version: 3.7.3
+Python Path: ['C:\\Dev\\hw05', 'C:\\Users\\mi\\AppData\\Local\\Programs\\Py=
+thon\\Python37-32\\python37.zip', 'C:\\Users\\mi\\AppData\\Local\\Programs\=
+\Python\\Python37-32\\DLLs', 'C:\\Users\\mi\\AppData\\Local\\Programs\\Pyth=
+on\\Python37-32\\lib', 'C:\\Users\\mi\\AppData\\Local\\Programs\\Python\\Py=
+thon37-32', 'C:\\Dev\\hw05\\venv', 'C:\\Dev\\hw05\\venv\\lib\\site-packages=
+']
+Server time: =D0=A7=D1=82, 12 =D0=9C=D0=B0=D1=80 2020 17:26:09 +0000
+Installed Applications:
+['users',
+ 'posts',
+ 'django.contrib.sites',
+ 'django.contrib.flatpages',
+ 'django.contrib.admin',
+ 'django.contrib.auth',
+ 'django.contrib.contenttypes',
+ 'django.contrib.sessions',
+ 'django.contrib.messages',
+ 'django.contrib.staticfiles']
+Installed Middleware:
+['django.middleware.security.SecurityMiddleware',
+ 'django.contrib.sessions.middleware.SessionMiddleware',
+ 'django.middleware.common.CommonMiddleware',
+ 'django.middleware.csrf.CsrfViewMiddleware',
+ 'django.contrib.auth.middleware.AuthenticationMiddleware',
+ 'django.contrib.messages.middleware.MessageMiddleware',
+ 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+ 'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware']
+
+
+Traceback:
+
+File "C:\Dev\hw05\venv\lib\site-packages\django\core\handlers\exception.py"=
+ in inner
+  34.             response =3D get_response(request)
+
+File "C:\Dev\hw05\venv\lib\site-packages\django\core\handlers\base.py" in _=
+get_response
+  115.                 response =3D self.process_exception_by_middleware(e,=
+ request)
+
+File "C:\Dev\hw05\venv\lib\site-packages\django\core\handlers\base.py" in _=
+get_response
+  113.                 response =3D wrapped_callback(request, *callback_arg=
+s, **callback_kwargs)
+
+Exception Type: TypeError at /404/
+Exception Value: page_not_found() missing 1 required positional argument: '=
+exception'
+Request information:
+USER: AnonymousUser
+
+GET: No GET data
+
+POST: No POST data
+
+FILES: No FILES data
+
+COOKIES:
+csrftoken =3D 'KNubMxEQ7yVgBFjqijyRG4Q4GNf8e6Tdw4CUG1V9A8XVbhp7tLe9ODMyuiDl=
+k8Ss'
+
+META:
+ALLUSERSPROFILE =3D 'C:\\ProgramData'
+APPDATA =3D 'C:\\Users\\mi\\AppData\\Roaming'
+CHOCOLATEYINSTALL =3D 'C:\\ProgramData\\chocolatey'
+CHOCOLATEYLASTPATHUPDATE =3D '132215119194756679'
+CM2015DIR =3D 'C:\\Program Files (x86)\\Common Files\\Autodesk Shared\\Mate=
+rials\\'
+COLORTERM =3D 'truecolor'
+COMMONPROGRAMFILES =3D 'C:\\Program Files (x86)\\Common Files'
+COMMONPROGRAMFILES(X86) =3D 'C:\\Program Files (x86)\\Common Files'
+COMMONPROGRAMW6432 =3D 'C:\\Program Files\\Common Files'
+COMPUTERNAME =3D 'DESKTOP-CFUIM7H'
+COMSPEC =3D 'C:\\WINDOWS\\system32\\cmd.exe'
+CONTENT_LENGTH =3D ''
+CONTENT_TYPE =3D 'text/plain'
+CSRF_COOKIE =3D 'KNubMxEQ7yVgBFjqijyRG4Q4GNf8e6Tdw4CUG1V9A8XVbhp7tLe9ODMyui=
+Dlk8Ss'
+DJANGO_SETTINGS_MODULE =3D 'yatube.settings'
+DRIVERDATA =3D 'C:\\Windows\\System32\\Drivers\\DriverData'
+EXEPATH =3D 'C:\\Program Files\\Git\\bin'
+FPS_BROWSER_APP_PROFILE_STRING =3D 'Internet Explorer'
+FPS_BROWSER_USER_PROFILE_STRING =3D 'Default'
+GATEWAY_INTERFACE =3D 'CGI/1.1'
+HOME =3D 'C:\\Users\\mi'
+HOMEDRIVE =3D 'C:'
+HOMEPATH =3D '\\Users\\mi'
+HTTP_ACCEPT =3D 'text/html,application/xhtml+xml,application/xml;q=3D0.9,im=
+age/webp,image/apng,*/*;q=3D0.8,application/signed-exchange;v=3Db3;q=3D0.9'
+HTTP_ACCEPT_ENCODING =3D 'gzip, deflate, br'
+HTTP_ACCEPT_LANGUAGE =3D 'ru-RU,ru;q=3D0.9,en-US;q=3D0.8,en;q=3D0.7,nl;q=3D=
+0.6'
+HTTP_CACHE_CONTROL =3D 'max-age=3D0'
+HTTP_CONNECTION =3D 'keep-alive'
+HTTP_COOKIE =3D 'csrftoken=3DKNubMxEQ7yVgBFjqijyRG4Q4GNf8e6Tdw4CUG1V9A8XVbh=
+p7tLe9ODMyuiDlk8Ss'
+HTTP_HOST =3D '127.0.0.1:8000'
+HTTP_SEC_FETCH_DEST =3D 'document'
+HTTP_SEC_FETCH_MODE =3D 'navigate'
+HTTP_SEC_FETCH_SITE =3D 'none'
+HTTP_SEC_FETCH_USER =3D '?1'
+HTTP_UPGRADE_INSECURE_REQUESTS =3D '1'
+HTTP_USER_AGENT =3D 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/=
+537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36'
+LANG =3D 'ru_RU.UTF-8'
+LOCALAPPDATA =3D 'C:\\Users\\mi\\AppData\\Local'
+LOGONSERVER =3D '\\\\DESKTOP-CFUIM7H'
+MSYSTEM =3D 'MINGW64'
+NUMBER_OF_PROCESSORS =3D '4'
+ONEDRIVE =3D 'C:\\Users\\mi\\OneDrive'
+OS =3D 'Windows_NT'
+PATH =3D 'C;C:\\Dev\\hw05\\venv\\Scripts;C:\\Program Files\\Git\\mingw64\\b=
+in;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\mi\\bin;C:\\Program Files (x=
+86)\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS=
+;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0=
+;C:\\WINDOWS\\System32\\OpenSSH;C:\\Users\\mi\\AppData\\Local\\Programs\\Py=
+thon\\Python37-32;C:\\Users\\mi\\AppData\\Local\\Programs\\Python\\Python37=
+-32\\Scripts;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\Microsoft =
+VS Code\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\mi\\AppData\\Local\\Mic=
+rosoft\\WindowsApps;C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt=
+_v6-rev0\\mingw64\\bin;C:\\Users\\mi\\Documents\\=D0=9A=D0=BD=D0=B8=D0=B3=
+=D0=B8\\=D0=9F=D1=80=D0=BE=D0=B3=D1=80=D0=B0=D0=BC=D0=BC=D0=B8=D1=80=D0=BE=
+=D0=B2=D0=B0=D0=BD=D0=B8=D0=B5\\Python\\=D0=9F=D1=80=D0=B0=D0=BA=D1=82=D0=
+=B8=D0=BA=D0=B0'
+PATHEXT =3D '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY'
+PATH_INFO =3D '/404/'
+PIP_HOME =3D 'C:\\Users\\mi\\AppData\\Local\\Programs\\Python\\Python37-32\=
+\Scripts'
+PLINK_PROTOCOL =3D 'ssh'
+PROCESSOR_ARCHITECTURE =3D 'x86'
+PROCESSOR_ARCHITEW6432 =3D 'AMD64'
+PROCESSOR_IDENTIFIER =3D 'Intel64 Family 6 Model 142 Stepping 9, GenuineInt=
+el'
+PROCESSOR_LEVEL =3D '6'
+PROCESSOR_REVISION =3D '8e09'
+PROGRAMDATA =3D 'C:\\ProgramData'
+PROGRAMFILES =3D 'C:\\Program Files (x86)'
+PROGRAMFILES(X86) =3D 'C:\\Program Files (x86)'
+PROGRAMW6432 =3D 'C:\\Program Files'
+PS1 =3D '(venv) \\[\\033]0;$TITLEPREFIX:$PWD\\007\\]\\n\\[\\033[32m\\]\\u@\=
+\h \\[\\033[35m\\]$MSYSTEM \\[\\033[33m\\]\\w\\[\\033[36m\\]`__git_ps1`\\[\=
+\033[0m\\]\\n$ '
+PSMODULEPATH =3D 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS=
+\\system32\\WindowsPowerShell\\v1.0\\Modules'
+PUBLIC =3D 'C:\\Users\\Public'
+PWD =3D 'C:/Dev/hw05'
+PYTHON_HOME =3D 'C:\\Users\\mi\\AppData\\Local\\Programs\\Python\\Python37-=
+32'
+QUERY_STRING =3D ''
+REMOTE_ADDR =3D '127.0.0.1'
+REMOTE_HOST =3D ''
+REQUEST_METHOD =3D 'GET'
+RUN_MAIN =3D 'true'
+SCRIPT_NAME =3D ''
+SERVER_NAME =3D 'DESKTOP-CFUIM7H'
+SERVER_PORT =3D '8000'
+SERVER_PROTOCOL =3D 'HTTP/1.1'
+SERVER_SOFTWARE =3D 'WSGIServer/0.2'
+SESSIONNAME =3D 'Console'
+SHLVL =3D '1'
+SYSTEMDRIVE =3D 'C:'
+SYSTEMROOT =3D 'C:\\WINDOWS'
+TEMP =3D 'C:\\Users\\mi\\AppData\\Local\\Temp'
+TERM =3D 'cygwin'
+TERM_PROGRAM =3D 'vscode'
+TERM_PROGRAM_VERSION =3D '1.41.1'
+TMP =3D 'C:\\Users\\mi\\AppData\\Local\\Temp'
+USERDOMAIN =3D 'DESKTOP-CFUIM7H'
+USERDOMAIN_ROAMINGPROFILE =3D 'DESKTOP-CFUIM7H'
+USERNAME =3D 'mi'
+USERPROFILE =3D 'C:\\Users\\mi'
+VIRTUAL_ENV =3D 'C:\\Dev\\hw05\\venv'
+VSC =3D '"C:\\Program Files\\Microsoft VS Code\\Code.exe"'
+WINDIR =3D 'C:\\WINDOWS'
+_ =3D '\\Dev\\hw05\\venv/Scripts/python'
+wsgi.errors =3D <_io.TextIOWrapper name=3D'<stderr>' mode=3D'w' encoding=3D=
+'utf-8'>
+wsgi.file_wrapper =3D ''
+wsgi.input =3D <django.core.handlers.wsgi.LimitedStream object at 0x04924E9=
+0>
+wsgi.multiprocess =3D False
+wsgi.multithread =3D True
+wsgi.run_once =3D False
+wsgi.url_scheme =3D 'http'
+wsgi.version =3D '(1, 0)'
+
+Settings:
+Using settings module yatube.settings
+ABSOLUTE_URL_OVERRIDES =3D {}
+ADMINS =3D ['gavr-v-t@yandex.ru']
+ALLOWED_HOSTS =3D ['localhost', '127.0.0.1', '[::1]', 'testserver']
+APPEND_SLASH =3D True
+AUTHENTICATION_BACKENDS =3D ['django.contrib.auth.backends.ModelBackend']
+AUTH_PASSWORD_VALIDATORS =3D '********************'
+AUTH_USER_MODEL =3D 'auth.User'
+BASE_DIR =3D 'C:\\Dev\\hw05'
+CACHES =3D {'default': {'BACKEND': 'django.core.cache.backends.locmem.LocMe=
+mCache'}}
+CACHE_MIDDLEWARE_ALIAS =3D 'default'
+CACHE_MIDDLEWARE_KEY_PREFIX =3D '********************'
+CACHE_MIDDLEWARE_SECONDS =3D 600
+CSRF_COOKIE_AGE =3D 31449600
+CSRF_COOKIE_DOMAIN =3D None
+CSRF_COOKIE_HTTPONLY =3D False
+CSRF_COOKIE_NAME =3D 'csrftoken'
+CSRF_COOKIE_PATH =3D '/'
+CSRF_COOKIE_SAMESITE =3D 'Lax'
+CSRF_COOKIE_SECURE =3D False
+CSRF_FAILURE_VIEW =3D 'django.views.csrf.csrf_failure'
+CSRF_HEADER_NAME =3D 'HTTP_X_CSRFTOKEN'
+CSRF_TRUSTED_ORIGINS =3D []
+CSRF_USE_SESSIONS =3D False
+DATABASES =3D {'default': {'ENGINE': 'django.db.backends.sqlite3', 'NAME': =
+'C:\\Dev\\hw05\\db.sqlite3', 'ATOMIC_REQUESTS': False, 'AUTOCOMMIT': True, =
+'CONN_MAX_AGE': 0, 'OPTIONS': {}, 'TIME_ZONE': None, 'USER': '', 'PASSWORD'=
+: '********************', 'HOST': '', 'PORT': '', 'TEST': {'CHARSET': None,=
+ 'COLLATION': None, 'NAME': None, 'MIRROR': None}}}
+DATABASE_ROUTERS =3D []
+DATA_UPLOAD_MAX_MEMORY_SIZE =3D 2621440
+DATA_UPLOAD_MAX_NUMBER_FIELDS =3D 1000
+DATETIME_FORMAT =3D 'N j, Y, P'
+DATETIME_INPUT_FORMATS =3D ['%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f', '%=
+Y-%m-%d %H:%M', '%Y-%m-%d', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M:%S.%f', '%=
+m/%d/%Y %H:%M', '%m/%d/%Y', '%m/%d/%y %H:%M:%S', '%m/%d/%y %H:%M:%S.%f', '%=
+m/%d/%y %H:%M', '%m/%d/%y']
+DATE_FORMAT =3D 'N j, Y'
+DATE_INPUT_FORMATS =3D ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y', '%b=
+ %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B %Y', '%d=
+ %B, %Y']
+DEBUG =3D False
+DEBUG_PROPAGATE_EXCEPTIONS =3D False
+DECIMAL_SEPARATOR =3D '.'
+DEFAULT_CHARSET =3D 'utf-8'
+DEFAULT_CONTENT_TYPE =3D 'text/html'
+DEFAULT_EXCEPTION_REPORTER_FILTER =3D 'django.views.debug.SafeExceptionRepo=
+rterFilter'
+DEFAULT_FILE_STORAGE =3D 'django.core.files.storage.FileSystemStorage'
+DEFAULT_FROM_EMAIL =3D 'webmaster@localhost'
+DEFAULT_INDEX_TABLESPACE =3D ''
+DEFAULT_TABLESPACE =3D ''
+DISALLOWED_USER_AGENTS =3D []
+EMAIL_BACKEND =3D 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH =3D 'C:\\Dev\\hw05\\sent_emails'
+EMAIL_HOST =3D 'localhost'
+EMAIL_HOST_PASSWORD =3D '********************'
+EMAIL_HOST_USER =3D ''
+EMAIL_PORT =3D 25
+EMAIL_SSL_CERTFILE =3D None
+EMAIL_SSL_KEYFILE =3D '********************'
+EMAIL_SUBJECT_PREFIX =3D '[Django] '
+EMAIL_TIMEOUT =3D None
+EMAIL_USE_LOCALTIME =3D False
+EMAIL_USE_SSL =3D False
+EMAIL_USE_TLS =3D False
+FILE_CHARSET =3D 'utf-8'
+FILE_UPLOAD_DIRECTORY_PERMISSIONS =3D None
+FILE_UPLOAD_HANDLERS =3D ['django.core.files.uploadhandler.MemoryFileUpload=
+Handler', 'django.core.files.uploadhandler.TemporaryFileUploadHandler']
+FILE_UPLOAD_MAX_MEMORY_SIZE =3D 2621440
+FILE_UPLOAD_PERMISSIONS =3D None
+FILE_UPLOAD_TEMP_DIR =3D None
+FIRST_DAY_OF_WEEK =3D 0
+FIXTURE_DIRS =3D []
+FORCE_SCRIPT_NAME =3D None
+FORMAT_MODULE_PATH =3D None
+FORM_RENDERER =3D 'django.forms.renderers.DjangoTemplates'
+IGNORABLE_404_URLS =3D []
+INSTALLED_APPS =3D ['users', 'posts', 'django.contrib.sites', 'django.contr=
+ib.flatpages', 'django.contrib.admin', 'django.contrib.auth', 'django.contr=
+ib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'dj=
+ango.contrib.staticfiles']
+INTERNAL_IPS =3D []
+LANGUAGES =3D [('af', 'Afrikaans'), ('ar', 'Arabic'), ('ast', 'Asturian'), =
+('az', 'Azerbaijani'), ('bg', 'Bulgarian'), ('be', 'Belarusian'), ('bn', 'B=
+engali'), ('br', 'Breton'), ('bs', 'Bosnian'), ('ca', 'Catalan'), ('cs', 'C=
+zech'), ('cy', 'Welsh'), ('da', 'Danish'), ('de', 'German'), ('dsb', 'Lower=
+ Sorbian'), ('el', 'Greek'), ('en', 'English'), ('en-au', 'Australian Engli=
+sh'), ('en-gb', 'British English'), ('eo', 'Esperanto'), ('es', 'Spanish'),=
+ ('es-ar', 'Argentinian Spanish'), ('es-co', 'Colombian Spanish'), ('es-mx'=
+, 'Mexican Spanish'), ('es-ni', 'Nicaraguan Spanish'), ('es-ve', 'Venezuela=
+n Spanish'), ('et', 'Estonian'), ('eu', 'Basque'), ('fa', 'Persian'), ('fi'=
+, 'Finnish'), ('fr', 'French'), ('fy', 'Frisian'), ('ga', 'Irish'), ('gd', =
+'Scottish Gaelic'), ('gl', 'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), =
+('hr', 'Croatian'), ('hsb', 'Upper Sorbian'), ('hu', 'Hungarian'), ('hy', '=
+Armenian'), ('ia', 'Interlingua'), ('id', 'Indonesian'), ('io', 'Ido'), ('i=
+s', 'Icelandic'), ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian')=
+, ('kab', 'Kabyle'), ('kk', 'Kazakh'), ('km', 'Khmer'), ('kn', 'Kannada'), =
+('ko', 'Korean'), ('lb', 'Luxembourgish'), ('lt', 'Lithuanian'), ('lv', 'La=
+tvian'), ('mk', 'Macedonian'), ('ml', 'Malayalam'), ('mn', 'Mongolian'), ('=
+mr', 'Marathi'), ('my', 'Burmese'), ('nb', 'Norwegian Bokm=C3=A5l'), ('ne',=
+ 'Nepali'), ('nl', 'Dutch'), ('nn', 'Norwegian Nynorsk'), ('os', 'Ossetic')=
+, ('pa', 'Punjabi'), ('pl', 'Polish'), ('pt', 'Portuguese'), ('pt-br', 'Bra=
+zilian Portuguese'), ('ro', 'Romanian'), ('ru', 'Russian'), ('sk', 'Slovak'=
+), ('sl', 'Slovenian'), ('sq', 'Albanian'), ('sr', 'Serbian'), ('sr-latn', =
+'Serbian Latin'), ('sv', 'Swedish'), ('sw', 'Swahili'), ('ta', 'Tamil'), ('=
+te', 'Telugu'), ('th', 'Thai'), ('tr', 'Turkish'), ('tt', 'Tatar'), ('udm',=
+ 'Udmurt'), ('uk', 'Ukrainian'), ('ur', 'Urdu'), ('vi', 'Vietnamese'), ('zh=
+-hans', 'Simplified Chinese'), ('zh-hant', 'Traditional Chinese')]
+LANGUAGES_BIDI =3D ['he', 'ar', 'fa', 'ur']
+LANGUAGE_CODE =3D 'ru'
+LANGUAGE_COOKIE_AGE =3D None
+LANGUAGE_COOKIE_DOMAIN =3D None
+LANGUAGE_COOKIE_NAME =3D 'django_language'
+LANGUAGE_COOKIE_PATH =3D '/'
+LOCALE_PATHS =3D []
+LOGGING =3D {}
+LOGGING_CONFIG =3D 'logging.config.dictConfig'
+LOGIN_REDIRECT_URL =3D 'index'
+LOGIN_URL =3D '/auth/login/'
+LOGOUT_REDIRECT_URL =3D 'index'
+MANAGERS =3D ['gavr-v-t@yandex.ru']
+MEDIA_ROOT =3D ''
+MEDIA_URL =3D ''
+MESSAGE_STORAGE =3D 'django.contrib.messages.storage.fallback.FallbackStora=
+ge'
+MIDDLEWARE =3D ['django.middleware.security.SecurityMiddleware', 'django.co=
+ntrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.Com=
+monMiddleware', 'django.middleware.csrf.CsrfViewMiddleware', 'django.contri=
+b.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middl=
+eware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMidd=
+leware', 'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware']
+MIGRATION_MODULES =3D {}
+MONTH_DAY_FORMAT =3D 'F j'
+NUMBER_GROUPING =3D 0
+PASSWORD_HASHERS =3D '********************'
+PASSWORD_RESET_TIMEOUT_DAYS =3D '********************'
+PREPEND_WWW =3D False
+ROOT_URLCONF =3D 'yatube.urls'
+SECRET_KEY =3D '********************'
+SECURE_BROWSER_XSS_FILTER =3D False
+SECURE_CONTENT_TYPE_NOSNIFF =3D False
+SECURE_HSTS_INCLUDE_SUBDOMAINS =3D False
+SECURE_HSTS_PRELOAD =3D False
+SECURE_HSTS_SECONDS =3D 0
+SECURE_PROXY_SSL_HEADER =3D None
+SECURE_REDIRECT_EXEMPT =3D []
+SECURE_SSL_HOST =3D None
+SECURE_SSL_REDIRECT =3D False
+SERVER_EMAIL =3D 'root@localhost'
+SESSION_CACHE_ALIAS =3D 'default'
+SESSION_COOKIE_AGE =3D 1209600
+SESSION_COOKIE_DOMAIN =3D None
+SESSION_COOKIE_HTTPONLY =3D True
+SESSION_COOKIE_NAME =3D 'sessionid'
+SESSION_COOKIE_PATH =3D '/'
+SESSION_COOKIE_SAMESITE =3D 'Lax'
+SESSION_COOKIE_SECURE =3D False
+SESSION_ENGINE =3D 'django.contrib.sessions.backends.db'
+SESSION_EXPIRE_AT_BROWSER_CLOSE =3D False
+SESSION_FILE_PATH =3D None
+SESSION_SAVE_EVERY_REQUEST =3D False
+SESSION_SERIALIZER =3D 'django.contrib.sessions.serializers.JSONSerializer'
+SETTINGS_MODULE =3D 'yatube.settings'
+SHORT_DATETIME_FORMAT =3D 'm/d/Y P'
+SHORT_DATE_FORMAT =3D 'm/d/Y'
+SIGNING_BACKEND =3D 'django.core.signing.TimestampSigner'
+SILENCED_SYSTEM_CHECKS =3D []
+SITE_ID =3D 3
+STATICFILES_DIRS =3D []
+STATICFILES_FINDERS =3D ['django.contrib.staticfiles.finders.FileSystemFind=
+er', 'django.contrib.staticfiles.finders.AppDirectoriesFinder']
+STATICFILES_STORAGE =3D 'django.contrib.staticfiles.storage.StaticFilesStor=
+age'
+STATIC_ROOT =3D 'C:\\Dev\\hw05\\static'
+STATIC_URL =3D '/static/'
+TEMPLATES =3D [{'BACKEND': 'django.template.backends.django.DjangoTemplates=
+', 'DIRS': ['C:\\Dev\\hw05\\templates'], 'APP_DIRS': True, 'OPTIONS': {'con=
+text_processors': ['django.template.context_processors.debug', 'django.temp=
+late.context_processors.request', 'django.contrib.auth.context_processors.a=
+uth', 'django.contrib.messages.context_processors.messages', 'users.context=
+_processor.year']}}]
+TEMPLATES_DIR =3D 'C:\\Dev\\hw05\\templates'
+TEST_NON_SERIALIZED_APPS =3D []
+TEST_RUNNER =3D 'django.test.runner.DiscoverRunner'
+THOUSAND_SEPARATOR =3D ','
+TIME_FORMAT =3D 'P'
+TIME_INPUT_FORMATS =3D ['%H:%M:%S', '%H:%M:%S.%f', '%H:%M']
+TIME_ZONE =3D 'UTC'
+USE_I18N =3D True
+USE_L10N =3D True
+USE_THOUSAND_SEPARATOR =3D False
+USE_TZ =3D True
+USE_X_FORWARDED_HOST =3D False
+USE_X_FORWARDED_PORT =3D False
+WSGI_APPLICATION =3D 'yatube.wsgi.application'
+X_FRAME_OPTIONS =3D 'SAMEORIGIN'
+YEAR_MONTH_FORMAT =3D 'F Y'
+
+
+
+-------------------------------------------------------------------------------

@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% block title %} Избранные авторы {% endblock %}
+
+{% block content %}
+{% include "menu.html" %}
+<main role="main" class="container">
+<div class="row">
+
+        <h1> Последние обновления избранных авторов</h1>
+        {% for post in page %}
+            <!-- Вот он, новый include! -->
+
+                {% include "post_item.html" with post=post %}
+        {% endfor %}
+        <!-- Вывод паджинатора -->
+        {% if page.has_other_pages %}
+            {% include "paginator.html" with items=page paginator=paginator%}
+        {% endif %}
+
+</div>
+</main>
+{% endblock %}
