@@ -3,6 +3,7 @@ env
 venv
 .vscode
 media
+dump.json
 
 __pycache__/
 *.py[cod]

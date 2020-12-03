@@ -33,12 +33,12 @@
                 </div>
         </div>
 
-        <div class="col-md-9">
-
-            <!-- Пост -->  
-            {% include "post_item.html" with post=post %}
-     </div>
-    </div>
+</div>
+                <div class="col-md-9">
+        
+                    <!-- Пост -->  
+                    {% include "post_item.html" with post=post %}
+             </div>
 </main>
 {% include 'comment.html' with comments=comments %}
 {% endblock %}

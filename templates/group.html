@@ -6,22 +6,12 @@
     <p> {{ group.description }} </p>
 
     {% for post in page %}
-
-        {% load thumbnail %}
-        {% thumbnail post.image "960x339" crop="center" upscale=True as im %}
-                <img class="card-img" src="{{ im.url }}">
-        {% endthumbnail %}
-
-        <h3>
-            Автор: {{ post.author.get_full_name }}, дата публикации: {{ post.pub_date|date:"d M Y" }}
-        </h3>
-        <p>{{ post.text|linebreaksbr }}</p>
-        <hr>
-
+        {% include "post_item.html" with post=post %}
     {% endfor %}
 
+    <!-- Вывод паджинатора -->
     {% if page.has_other_pages %}
-        {% include 'paginator.html' with items=page paginator=paginator %}
+        {% include 'paginator.html' with current_page=page paginator=paginator %}
     {% endif %}
 
 {% endblock %}

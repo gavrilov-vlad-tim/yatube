@@ -18,9 +18,8 @@
                                 <ul class="list-group list-group-flush">
                                         <li class="list-group-item">
                                                 <div class="h6 text-muted">
-                                                Подписчиков: XXX <br />
-                                                Подписан: XXX
-                                                </div>
+                                                Подписчиков: {{ following_count}} <br />
+                                                Подписан: {{ follow_count }}
                                         </li>
                                         <li class="list-group-item">
                                                 <div class="h6 text-muted">
@@ -32,7 +31,7 @@
                         </div>
                         {% if user_is_author %}
                                 <li class="list-group-item">
-                                        {% if following %}
+                                        {% if is_follow %}
                                         <a class="btn btn-lg btn-light" 
                                                 href="{% url 'profile_unfollow' profile.username %}" role="button"> 
                                                 Отписаться 
@@ -49,15 +48,12 @@
     
                 <div class="col-md-9">                
                     {% for post in page %}
-                    <!-- Начало блока с отдельным постом --> 
                     {% include "post_item.html" with post=post %}
                     {% endfor %}
-                    <!-- Конец блока с отдельным постом --> 
-    
+
+                <!-- Вывод паджинатора -->
                 {% if page.has_other_pages %}
-
-                    {% include 'paginator.html' with items=page paginator=paginator %}
-
+                    {% include 'paginator.html' with current_page=page paginator=paginator %}
                 {% endif %}
          </div>
         </div>
